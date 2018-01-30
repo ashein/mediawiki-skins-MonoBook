@@ -16,21 +16,21 @@ div#column-content {
 	padding: 0;
 }
 
-.mw-body {
+#mw-body {
 	margin: 2.8em 0 0 12.2em;
 	padding: 1em;
 	position: relative;
 	z-index: 2;
 	background: #fff;
 	color: #000;
-	border: 1px solid #aaa;
-	border-right: 0;
+	border: 2px dashed #8f713f;
 	line-height: 1.5em;
 }
 
 div#column-one {
 	padding-top: 160px;
 }
+
 
 /* Hide, but keep accessible for screen-readers */
 #column-one h2 {
@@ -45,16 +45,13 @@ div#column-one {
 ** More at http://www.w3.org/2003/07/30-font-size
 ** http://style.cleverchimp.com/font_size_intervals/altintervals.html
 */
-
 body {
 	font: x-small sans-serif;
 	/* @embed */
-	background: #f9f9f9 url( headbg.jpg ) 0 0 no-repeat;
-	color: #000;
+	background: #fffbf4 url( headbg.jpg ) 0 0 no-repeat;
+	color: #9999BB;
 	margin: 0;
 	padding: 0;
-	direction: ltr; /* Needed for RTL flipping */
-	unicode-bidi: embed;
 }
 
 /* scale back up to a sane default */
@@ -69,16 +66,38 @@ div#globalWrapper {
 
 /* general styles */
 a {
-	color: #002bb8;
+	text-decoration: none;
+	color: #3366bb;
+	background: none;
+	font-weight: bold;
 }
 
 a:visited {
-	color: #5a3696;
+	color: #3366bb;
+	font-weight: bold;
+}
+
+a:active {
+	color: #3366bb;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.stub {
+	color: #772233;
 }
 
 a.new,
 #p-personal a.new {
-	color: #c20;
+	color: #9999BB;
+}
+
+a.new:visited, 
+#p-personal a.new:visited {
+	color: #8f713f;
 }
 
 ul {
@@ -115,6 +134,7 @@ pre,
 */
 
 #siteNotice {
+	text-align: center;
 	font-size: 95%;
 	padding: 0 0.9em;
 }
@@ -128,11 +148,11 @@ pre,
 	padding: 0;
 }
 
+
 /*
 ** classes for special content elements like town boxes
 ** intended to be referenced directly from the wiki src
 */
-
 /*
 ** User styles
 */
@@ -154,16 +174,15 @@ table.rimage {
 	padding: 0;
 }
 
-/*
+*
 ** Structural Elements
 */
-
 /*
 ** general portlet styles (elements in the quickbar)
 */
 .portlet {
-	border: 0;
-	margin: 0 0 0.5em;
+	border: none;
+	margin: 0 0 .5em;
 	padding: 0;
 	float: none;
 	width: 11.6em;
@@ -171,14 +190,16 @@ table.rimage {
 }
 
 .portlet h3 {
-	background: transparent;
-	padding: 0 1em 0 0.5em;
-	display: inline;
-	height: 1em;
+	background: #ffae2e;
+	padding: 0 1em 0 1em;
+	display: inline-block;
+	height: 1.2em;
 	text-transform: lowercase;
-	font-size: 91%;
+	font-size: 1em;
 	font-weight: normal;
 	white-space: nowrap;
+	border: 1px dashed #2f6fab;
+	border-style: dashed dashed none dashed;
 }
 
 .pBody {
@@ -186,7 +207,7 @@ table.rimage {
 	background-color: #fff;
 	color: #000;
 	border-collapse: collapse;
-	border: 1px solid #aaa;
+	border: 1px dashed #aaa;
 	padding: 0 0.8em 0.3em 0.5em;
 }
 
@@ -196,9 +217,10 @@ table.rimage {
 	clear: both;
 	display: block;
 }
-
 .portlet ul {
 	line-height: 1.5em;
+	list-style-type: square;
+	list-style-image: url(bullet.gif);
 	font-size: 95%;
 }
 
@@ -220,11 +242,9 @@ table.rimage {
 	width: 12em;
 	overflow: visible;
 }
-
 #p-logo h3 {
 	display: none;
 }
-
 #p-logo a,
 #p-logo a:hover {
 	display: block;
@@ -234,7 +254,6 @@ table.rimage {
 	background-position: 35% 50% !important; /* stylelint-disable-line declaration-no-important */
 	text-decoration: none;
 }
-
 /*
 ** Search portlet
 */
@@ -242,24 +261,20 @@ table.rimage {
 	position: relative;
 	z-index: 3;
 }
-
 input.searchButton {
 	margin-top: 1px;
 	font-size: 95%;
 }
-
 #searchGoButton {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	font-weight: bold;
 }
-
 #searchInput {
 	width: 10.9em;
 	margin: 0;
 	font-size: 95%;
 }
-
 #p-search .pBody {
 	padding: 0.5em 0.4em 0.4em 0.4em;
 	text-align: center;
@@ -292,7 +307,6 @@ input.searchButton {
 #p-personal h3 {
 	display: none;
 }
-
 #p-personal .portlet,
 #p-personal .pBody {
 	z-index: 0;
@@ -302,7 +316,6 @@ input.searchButton {
 	overflow: visible;
 	background: none;
 }
-
 /* this is the ul contained in the portlet */
 #p-personal ul {
 	border: 0;
@@ -338,12 +351,10 @@ input.searchButton {
 	color: #005896;
 	padding-bottom: 0.2em;
 }
-
 #p-personal li a:hover {
 	background-color: #fff;
 	text-decoration: none;
 }
-
 #p-personal li.active a:hover {
 	background-color: transparent;
 }
@@ -353,7 +364,7 @@ li#pt-userpage,
 li#pt-anonuserpage,
 li#pt-login {
 	/* @embed */
-	background: url( user.gif ) top left no-repeat;
+	background: url(user.gif) top left no-repeat;
 	padding-left: 20px;
 }
 
@@ -366,11 +377,9 @@ li#pt-userpage {
 li#pt-anonuserpage {
 	color: #707070;
 }
-
 #p-personal li.active {
 	font-weight: bold;
 }
-
 /*
 ** the page-related actions- page/talk, edit etc
 */
@@ -388,27 +397,23 @@ li#pt-anonuserpage {
 	padding-left: 1em;
 	font-size: 95%;
 }
-
 #p-cactions ul {
 	list-style-type: none;
 	list-style-image: none;
 }
-
 #p-cactions li {
 	display: inline;
-	border: 1px solid #aaa;
+	border: 1px dashed #aaa;
 	border-bottom: 0;
 	padding: 0 0 1em 0;
 	margin: 0 0.3em 0 0;
 	overflow: visible;
 	background: #fff;
 }
-
 #p-cactions li.selected {
 	border-color: #fabd23;
 	font-weight: bold;
 }
-
 #p-cactions li a {
 	background-color: #fbfbfb;
 	color: #002bb8;
@@ -420,16 +425,13 @@ li#pt-anonuserpage {
 	text-decoration: none;
 	text-transform: lowercase;
 }
-
 #p-cactions li.selected a {
 	z-index: 3;
 	background-color: #fff;
 }
-
 #p-cactions .new a {
 	color: #ba0000;
 }
-
 #p-cactions li a:hover {
 	z-index: 3;
 	text-decoration: none;
@@ -439,20 +441,16 @@ li#pt-anonuserpage {
 #p-cactions h3 {
 	display: none;
 }
-
 #p-cactions li.istalk {
 	margin-right: 0;
 }
-
 #p-cactions li.istalk a {
 	padding-right: 0.5em;
 }
-
 #p-cactions #ca-addsection a {
 	padding-left: 0.4em;
 	padding-right: 0.4em;
 }
-
 /* offsets to distinguish the tab groups */
 li#ca-talk {
 	margin-right: 1.6em;
@@ -464,7 +462,6 @@ li#ca-varlang-0,
 li#ca-print {
 	margin-left: 1.6em;
 }
-
 #p-cactions .pBody {
 	font-size: 1em;
 	background-color: transparent;
@@ -493,14 +490,13 @@ li#ca-print {
 #t-iscite {
 	color: #999;
 }
-
 /*
 ** footer
 */
 div#footer {
 	background-color: #fff;
-	border-top: 1px solid #fabd23;
-	border-bottom: 1px solid #fabd23;
+	border-top: 1px dashed #fabd23;
+	border-bottom: 1px dashed #fabd23;
 	margin: 0.6em 0 1em 0;
 	overflow: hidden;
 	padding: 0.4em 0 0.3em 0;
@@ -561,15 +557,14 @@ div.patrollink {
 }
 
 .editExternally {
-	border: 1px solid #808080;
-	background-color: #fff;
+	border: 1px dashed #808080;
+	background-color: #f9f9f9;
 	padding: 3px;
 	margin-top: 0.5em;
 	float: left;
 	font-size: small;
 	text-align: center;
 }
-
 .editExternallyHelp {
 	font-style: italic;
 	color: #808080;
@@ -592,7 +587,7 @@ input#wpDiff {
 
 /* noarticletext */
 div.noarticletext {
-	border: 1px solid #ccc;
+	border: 1px dashed #ccc;
 	background: #fff;
 	padding: 0.2em 1em;
 	color: #000;
@@ -603,22 +598,20 @@ div.noarticletext {
 }
 
 div.multipageimagenavbox {
-	border: solid 1px #c0c0c0;
+	border: dashed 1px Silver;
 	padding: 4px;
 	margin: 1em;
+	border-radius: 6px;
 	background: #f0f0f0;
 }
-
 div.multipageimagenavbox div.thumb {
 	border: 0;
 	margin-left: 2em;
 	margin-right: 2em;
 }
-
 div.multipageimagenavbox hr {
 	margin: 6px;
 }
-
 table.multipageimage td {
 	text-align: center;
 }
@@ -640,13 +633,13 @@ div.mw-lag-warn-high {
 }
 
 div.mw-lag-warn-normal {
-	border: 1px solid #fc6;
+	border: 1px dashed #fc6;
 	background-color: #ffc;
 }
 
 div.mw-lag-warn-high {
 	font-weight: bold;
-	border: 2px solid #f03;
+	border: 2px dashed #f03;
 	background-color: #fcc;
 }
 

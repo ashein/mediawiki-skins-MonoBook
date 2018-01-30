@@ -1,0 +1,767 @@
+/*
+ * Stuff that seems like some common styling probably used by an ur-man.
+ */
+
+.visualClear {
+	clear: both;
+}
+
+/* user notification thing */
+
+.usermessage {
+	background-color: #ffce7b;
+	border: 1px dashed #ffa500;
+	color: black;
+	font-weight: bold;
+	margin: 2em 0 1em;
+	padding: .5em 1em;
+	vertical-align: middle;
+}
+
+/* Palette for game logs, it seems. */
+
+.dmspeech {
+	color: #557da5;
+	display: inline;
+}
+.mainspeech {
+	color: #000000;
+	display: inline;
+}
+.actiontext {
+	color: #557da5;
+	display: inline;
+}
+
+.offtopic {
+	color: #9999BB;
+	display: inline;
+}
+
+/*
+ * Seemingly manual customizations for common elements.
+ * Most of these should be safely deleteable (whitespace-related ones)
+ */
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+p {
+	margin: .4em 0 .5em 0;
+	line-height: 1.5em;
+}
+
+p img {
+	margin: 0;
+}
+
+hr {
+	height: 1px;
+	color: #557da5;
+	background-color: #557da5;
+	border: 0;
+	margin: .2em 0 .2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #9999BB;
+	background: none;
+	font-weight: normal;
+	margin: 0;
+	padding-top: .5em;
+	padding-bottom: .17em;
+	border-bottom: 1px dashed #aaa;
+}
+
+ol {
+	line-height: 1.5em;
+	margin: .3em 0 0 3.2em;
+	padding: 0;
+	list-style-image: none;
+}
+
+li {
+	margin-bottom: .1em;
+}
+
+dt {
+	font-weight: bold;
+	margin-bottom: .1em;
+}
+
+dl {
+	margin-top: .2em;
+	margin-bottom: .5em;
+}
+
+dd {
+	line-height: 1.5em;
+	margin-left: 2em;
+	margin-bottom: .1em;
+}
+
+fieldset {
+	border: 1px dashed #2f6fab;
+	margin: 1em 0 1em 0;
+	padding: 0 1em 1em;
+	line-height: 1.5em;
+}
+
+fieldset.nested {
+	margin: 0 0 0.5em 0;
+	padding: 0 0.5em 0.5em;
+}
+
+legend {
+	padding: .5em;
+	font-size: 95%;
+}
+
+form {
+	border: none;
+	margin: 0;
+}
+
+textarea {
+	width: 100%;
+	padding: .1em;
+}
+
+select {
+	vertical-align: top;
+}
+
+abbr, acronym, .explain {
+	border-bottom: 1px dashed black;
+	color: black;
+	background: none;
+	cursor: help;
+}
+
+q {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+}
+
+code {
+	background-color: #fffbf4;
+}
+
+pre {
+	padding: 1em;
+	border: 1px dashed #2f6fab;
+	color: black;
+	background-color: #f9f9f9;
+	line-height: 1.1em;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+
+
+
+
+/*
+ * These selectors might be already deprecated, so not sure whether to ditch them or not.
+ * They do have the "dashed" customization an ur-man loves.
+ */
+
+.error {
+	color: red;
+	font-size: larger;
+}
+
+.errorbox,
+.successbox {
+	font-size: larger;
+	border: 2px dashed;
+	padding: .5em 1em;
+	float: left;
+	margin-bottom: 2em;
+	color: #000;
+}
+
+.errorbox {
+	border-color: red;
+	background-color: #fff2f2;
+}
+
+.successbox {
+	border-color: green;
+	background-color: #dfd;
+}
+
+.errorbox h2,
+.successbox h2 {
+	font-size: 1em;
+	font-weight: bold;
+	display: inline;
+	margin: 0 .5em 0 0;
+	border: none;
+}
+
+#catlinks {
+	border: 1px dashed #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	margin-top: 1em;
+	clear: both;
+}
+
+/* currently unused, intended to be used by a metadata box
+in the bottom-right corner of the content area */
+.documentDescription {
+	/* The summary text describing the document */
+	font-weight: bold;
+	display: block;
+	margin: 1em 0;
+	line-height: 1.5em;
+}
+
+.documentByLine {
+	text-align: right;
+	font-size: 90%;
+	clear: both;
+	font-weight: normal;
+	color: #76797c;
+}
+
+/* emulate center */
+.center {
+	width: 100%;
+	text-align: center;
+}
+
+*.center * {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* small for tables and similar */
+.small, .small * {
+	font-size: 94%;
+}
+
+table.small {
+	font-size: 100%;
+}
+
+/*
+** content styles
+*/
+#toc,
+.toc,
+.mw-warning {
+	border: 1px dashed #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+#toc h2,
+.toc h2 {
+	display: inline;
+	border: none;
+	padding: 0;
+	font-size: 100%;
+	font-weight: bold;
+}
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle {
+	text-align: center;
+}
+#toc ul,
+.toc ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: left;
+}
+#toc ul ul,
+.toc ul ul {
+	margin: 0 0 0 2em;
+}
+#toc .toctoggle,
+.toc .toctoggle {
+	font-size: 94%;
+}
+.mw-warning {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+/* images */
+div.floatright, table.floatright {
+	clear: right;
+	float: right;
+	position: relative;
+	margin: 0 0 .5em .5em;
+	border: 0;
+/*
+	border: .5em dashed white;
+	border-width: .5em 0 .8em 1.4em;
+*/
+}
+div.floatright p { font-style: italic; }
+div.floatleft, table.floatleft {
+	float: left;
+	position: relative;
+	margin: 0 .5em .5em 0;
+	border: 0;
+/*
+	margin: .3em .5em .5em 0;
+	border: .5em dashed white;
+	border-width: .5em 1.4em .8em 0;
+*/
+}
+div.floatleft p { font-style: italic; }
+/* thumbnails */
+div.thumb {
+	margin-bottom: .5em;
+	border-style: dashed;
+	border-color: white;
+	width: auto;
+}
+div.thumbinner {
+	border: 1px dashed #ccc;
+	padding: 3px !important;
+	background-color: #f9f9f9;
+	font-size: 94%;
+	text-align: center;
+	overflow: hidden;
+}
+html .thumbimage {
+	border: 1px dashed #ccc;
+}
+html .thumbcaption {
+	border: none;
+	text-align: left;
+	line-height: 1.4em;
+	padding: .3em 0 .1em 0;
+}
+div.magnify {
+	float: right;
+	border: none !important;
+	background: none !important;
+}
+div.magnify a, div.magnify img {
+	display: block;
+	border: none !important;
+	background: none !important;
+}
+div.tright {
+	clear: right;
+	float: right;
+	border-width: .5em 0 .8em 1.4em;
+}
+div.tleft {
+	float: left;
+	margin-right: .5em;
+	border-width: .5em 1.4em .8em 0;
+}
+img.thumbborder {
+	border: 1px dashed #dddddd;
+}
+.hiddenStructure {
+	display: none;
+	speak: none;
+}
+
+
+
+
+
+.toccolours {
+	border: 1px dashed #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+
+
+
+
+
+/* Page history styling */
+/* the auto-generated edit comments */
+.autocomment {
+	color: gray;
+}
+#pagehistory span.user {
+	margin-left: 1.4em;
+	margin-right: .4em;
+}
+#pagehistory span.minor {
+	font-weight: bold;
+}
+#pagehistory li {
+	border: 1px dashed white;
+}
+#pagehistory li.selected {
+	background-color: #f9f9f9;
+	border: 1px dashed #aaa;
+}
+/*
+** Diff rendering
+*/
+table.diff, td.diff-otitle, td.diff-ntitle {
+	background-color: white;
+}
+td.diff-addedline {
+	background: #cfc;
+	font-size: smaller;
+}
+td.diff-deletedline {
+	background: #ffa;
+	font-size: smaller;
+}
+td.diff-context {
+	background: #eee;
+	font-size: smaller;
+}
+span.diffchange {
+	color: red;
+	font-weight: bold;
+}
+
+
+
+
+
+
+/* js pref toc */
+#preftoc {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	clear: both;
+}
+#preftoc li {
+	margin: 1px -2px 1px 2px;
+	float: left;
+	padding: 2px 0 3px 0;
+	background-color: #f0f0f0;
+	color: #000;
+	border: 1px dashed white;
+	border-right-color: #716f64;
+	border-bottom: 0;
+	position: relative;
+	white-space: nowrap;
+	list-style-type: none;
+	list-style-image: none;
+	z-index: 3;
+}
+#preftoc li.selected {
+	font-weight: bold;
+	background-color: #f9f9f9;
+	border: 1px dashed #aaa;
+	border-bottom: none;
+	cursor: default;
+	top: 1px;
+	padding-top: 2px;
+	margin-right: -3px;
+}
+#preftoc > li.selected {
+	top: 2px;
+}
+#preftoc a,
+#preftoc a:active {
+	display: block;
+	color: #000;
+	padding: 0 .7em;
+	position: relative;
+	text-decoration: none;
+}
+#preftoc li.selected a {
+	cursor: default;
+	text-decoration: none;
+}
+#prefcontrol {
+	padding-top: 2em;
+	clear: both;
+}
+#preferences {
+	margin: 0;
+	border: 1px dashed #aaa;
+	clear: both;
+	padding: 1.5em;
+	background-color: #f9f9f9;
+}
+.prefsection {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.prefsection legend {
+	font-weight: bold;
+}
+.prefsection fieldset {
+	border: 1px dashed #aaa;
+	float: left;
+	margin-right: 2em;
+}
+.prefsection table, .prefsection legend {
+	font-weight: bold;
+}
+.prefsection table, .prefsection legend {
+	background-color: #f9f9f9;
+}
+.mainLegend {
+	display: none;
+}
+.prefsectiontip {
+	font-size: 95%;
+	margin-top: 0;
+	background-color: #FFC1C1;
+	padding: .2em .7em;
+	clear: both;
+}
+.btnSavePrefs {
+	font-weight: bold;
+	padding-left: .3em;
+	padding-right: .3em;
+}
+.preferences-login {
+	clear: both;
+	margin-bottom: 1.5em;
+}
+.prefcache {
+	font-size: 90%;
+	margin-top: 2em;
+}
+div#userloginForm form,
+div#userlogin form#userlogin2 {
+	margin: 0 3em 1em 0;
+	border: 1px dashed #aaa;
+	clear: both;
+	padding: 1.5em 2em;
+	background-color: #f9f9f9;
+	float: left;
+}
+div#userloginForm table,
+div#userlogin form#userlogin2 table {
+	background-color: #f9f9f9;
+}
+div#userloginForm h2,
+div#userlogin form#userlogin2 h2 {
+	padding-top: 0;
+}
+div#userlogin .captcha,
+div#userloginForm .captcha {
+	border: 1px dashed #bbb;
+	padding: 1.5em 2em;
+	width: 400px;
+	background-color: white;
+}
+
+#loginend, #signupend {
+	clear: both;
+}
+
+#userloginprompt, #languagelinks {
+	font-size: 85%;
+}
+
+
+
+
+/* tabs: border on the a, not the div */
+* > html #p-cactions li { border: none; }
+* > html #p-cactions li a {
+	border: 1px dashed #aaa;
+	border-bottom: none;
+}
+
+
+
+/* Customizations for the gallery, it seems */
+
+table.gallery {
+	border: 1px dashed #ccc;
+	margin: 2px;
+	padding: 2px;
+	background-color: white;
+}
+table.gallery tr {
+	vertical-align: top;
+}
+table.gallery td {
+	vertical-align: top;
+	background-color: #f9f9f9;
+	border: dashed 2px white;
+}
+table.gallery td.galleryheader {
+	text-align: center;
+	font-weight: bold;
+}
+div.gallerybox {
+	margin: 2px;
+	width:	150px;
+}
+div.gallerybox div.thumb {
+	text-align: center;
+	border: 1px dashed #ccc;
+	margin: 2px;
+}
+div.gallerytext {
+	font-size: 94%;
+	padding: 2px 4px;
+}
+span.comment {
+	font-style: italic;
+}
+span.changedby {
+	font-size: 95%;
+}
+.previewnote {
+	text-indent: 3em;
+	color: #c00;
+	border-bottom: 1px dashed #aaa;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+.previewnote p {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* Classes for EXIF data display */
+table.mw_metadata {
+	font-size: 0.8em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+	width: 300px;
+}
+table.mw_metadata caption {
+	font-weight: bold;
+}
+table.mw_metadata th {
+	font-weight: normal;
+}
+table.mw_metadata td {
+	padding: 0.1em;
+}
+table.mw_metadata {
+	border: none;
+	border-collapse: collapse;
+}
+table.mw_metadata td, table.mw_metadata th {
+	text-align: center;
+	border: 1px dashed #aaaaaa;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+}
+table.mw_metadata th {
+	background-color: #f9f9f9;
+}
+table.mw_metadata td {
+	background-color: #fcfcfc;
+}
+table.collapsed tr.collapsable {
+	display: none;
+}
+/* filetoc */
+ul#filetoc {
+	text-align: center;
+	border: 1px dashed #aaaaaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+	margin-bottom: 0.5em;
+	margin-left: 0;
+	margin-right: 0;
+}
+#filetoc li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 2em;
+}
+
+
+
+
+div#searchTargetContainer {
+	left: 10px;
+	top: 10px;
+	width: 90%;
+	background: white;
+}
+div#searchTarget {
+	padding: 3px;
+	margin: 5px;
+	background: #F0F0F0;
+	border: dashed 1px blue;
+}
+div#searchTarget ul li {
+	list-style: none;
+}
+div#searchTarget ul li:before {
+	color: orange;
+	content: "\00BB \0020";
+}
+
+div#searchTargetHide {
+	float:right;
+	border:dashed 1px black;
+	background:#DCDCDC;
+	padding:2px;
+}
+
+
+
+
+/*
+Table pager (e.g. Special:Imagelist)
+- remove underlines from the navigation link
+- collapse borders
+- set the borders to outsets (similar to Special:Allmessages)
+- remove line wrapping for all td and th, set background color
+- restore line wrapping for the last two table cells (description and size)
+*/
+
+.TablePager_nav a {
+	text-decoration: none;
+}
+.TablePager {
+	border-collapse: collapse;
+}
+
+.TablePager, .TablePager td, .TablePager th {
+	border: 0.15em dashed #777777;
+	padding: 0 0.15em 0 0.15em;
+}
+
+.TablePager th {
+	background-color: #eeeeff;
+}
+
+.TablePager td {
+	background-color: #f9f9f9;
+}
+
+.TablePager tr:hover td {
+	background-color: #eeeeff
+}
+
+.imagelist td, .imagelist th {
+	white-space: nowrap;
+}
+
+.imagelist .TablePager_col_links {
+	background-color: #eeeeff;
+}
+
+.imagelist .TablePager_col_img_description {
+	white-space: normal;
+}
+
+.imagelist th.TablePager_sort {
+	background-color: #ccccff;
+}

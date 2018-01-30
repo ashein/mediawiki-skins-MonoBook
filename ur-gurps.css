@@ -1,0 +1,165 @@
+/*
+ * Additions for GURPS charsheets
+ * This is expected to be loadable via the skin resource config file.
+ */
+
+.gurps_holder {
+	color: black;
+	background-color: white;
+	font: normal 7pt/9pt 'Lucida Sans','Arial',sans-serif;
+	margin: 4pt;
+}
+.gurps_holder table,
+.gurps_holder tbody,
+.gurps_holder tr,
+.gurps_holder td {
+	color: black;
+	margin: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+	font: normal 7pt/9pt 'Lucida Sans','Arial',sans-serif;
+}
+.gurps_holder table,
+.gurps_holder tbody,
+.gurps_holder tr,
+.gurps_holder {
+	padding: 0;
+}
+.gurps_holder td {
+	padding: 1pt 1pt 0 1pt;
+	vertical-align: top;
+	white-space: nowrap;
+}
+.gurps_holder .note {
+	font: normal 6pt/8pt 'Lucida Sans','Arial',sans-serif;
+	color: gray;
+	display: block-inline;
+	white-space: normal;
+}
+.gurps_holder .secondary {
+	display: block;
+}
+.gurps_holder .top_info {
+	margin: 0;
+}
+.gurps_holder .list,
+.gurps_holder .info {
+	margin: 2pt 0 0 0;
+}
+.gurps_holder .list,
+.gurps_holder .info,
+.gurps_holder .top_info {
+	width: 100%;
+	border: 1pt solid black;
+}
+.gurps_holder table.advantages {
+	width: 270pt;
+}
+.gurps_holder table.skills {
+	width: 269pt;
+}
+.gurps_holder table.spells,
+.gurps_holder table.melee_weapons,
+.gurps_holder table.ranged_weapons,
+.gurps_holder table.equipment,
+.gurps_holder table.notes,
+.gurps_holder table.copyright {
+	width: 540pt;
+}
+.gurps_holder .list td {
+	border: 1pt solid black;
+}
+.gurps_holder .odd {
+	background-color: white;
+}
+.gurps_holder .even {
+	background-color: #E8FFE8;
+}
+.gurps_holder table.encumbrance_move_dodge td,
+.gurps_holder table.hit_location td,
+.gurps_holder table.description td.label {
+	border-left: 1pt solid black;
+}
+.gurps_holder .top_border {
+	border-top: 1pt solid black;
+}
+.gurps_holder .title {
+	border: 1pt solid black;
+	background-color: silver;
+	color: black;
+	text-align: center;
+}
+.gurps_holder .description,
+.gurps_holder .value,
+.gurps_holder .rvalue,
+.gurps_holder .natural_damage {
+	width: 100%;
+}
+.gurps_holder .quantity, .gurps_holder .cost,
+.gurps_holder .weight, .gurps_holder .cost_summary,
+.gurps_holder .weight_summary, .gurps_holder .ref,
+.gurps_holder .level, .gurps_holder .accuracy,
+.gurps_holder .damage, .gurps_holder .range,
+.gurps_holder .rof, .gurps_holder .shots,
+.gurps_holder .bulk, .gurps_holder .recoil,
+.gurps_holder .strength, .gurps_holder .block,
+.gurps_holder .reach, .gurps_holder .points,
+.gurps_holder .spell_level, .gurps_holder .relative_spell_level,
+.gurps_holder .skill_level, .gurps_holder .relative_skill_level,
+.gurps_holder .rvalue {
+	text-align: right;
+}
+.gurps_holder .state,
+.gurps_holder .parry,
+.gurps_holder .natural_damage {
+	text-align: center;
+}
+.gurps_holder .wrapper {
+	width: 540pt;
+	border: none;
+}
+.gurps_holder .wrapper > tbody > tr > td {
+	padding: 0;
+}
+.gurps_holder .spacer {
+	width: 2pt;
+}
+.gurps_holder .rowspacer1 { padding: 1pt 0 0 0; }
+.gurps_holder .rowspacer2 { padding: 2pt 0 0 0; }
+.gurps_holder .rowspacer3 { padding: 3pt 0 0 0; }
+.gurps_holder .rowspacer4 { padding: 4pt 0 0 0; }
+.gurps_holder .rowspacer5 { padding: 5pt 0 0 0; }
+.gurps_holder .clabel {
+	text-align: center;
+}
+.gurps_holder .label {
+	text-align: right;
+}
+.gurps_holder .label,
+.gurps_holder .clabel {
+	color: gray;
+	background-color: inherit;
+}
+.gurps_holder .encumbrance {
+	background-color: #FCF2C4;
+	color: inherit;
+}
+.gurps_holder table.portrait {
+	width: 60pt;
+	height: 80pt;
+}
+.gurps_holder td.portrait {
+	width: 60pt;
+}
+.gurps_holder td.portrait_cell {
+	padding: 0;
+	background-color: black;
+}
+.gurps_holder .copyright {
+	color: gray;
+	font: italic 7pt/9pt 'Lucida Sans','Arial',sans-serif;
+	text-align: center;
+	white-space: normal;
+	margin: 4pt;
+}
+/* GURPS done */
