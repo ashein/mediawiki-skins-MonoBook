@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #9999BB;
 	background: none;
 	font-weight: normal;
-	margin: 0;
+	margin: 0 0 .5em;
 	padding-top: .5em;
 	padding-bottom: .17em;
 	border-bottom: 1px dashed #aaa;
@@ -147,6 +147,7 @@ q {
 
 code {
 	background-color: #fffbf4;
+	border: 0;
 }
 
 pre {
