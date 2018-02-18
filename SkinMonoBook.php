@@ -47,9 +47,9 @@ class SkinMonoBook extends SkinTemplate {
 		] );
 
 		// Add some UR-man-man things.
-		$out->addStyle( $this->stylename . '/ur-common.css', 'screen');
-		$out->addStyle( $this->stylename . '/ur-util.css', 'screen');
-		$out->addStyle( $this->stylename . '/ur-gurps.css', 'screen');
+		$out->addStyle( $this->stylename . '/skinStyles/ur-common.css', 'screen');
+		$out->addStyle( $this->stylename . '/skinStyles/ur-util.css', 'screen');
+		$out->addStyle( $this->stylename . '/skinStyles/ur-gurps.css', 'screen');
 		
 		// TODO: Migrate all of these
 		$out->addStyle( $this->stylename . '/IE60Fixes.css', 'screen', 'IE 6' );

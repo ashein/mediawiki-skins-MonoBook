@@ -75,6 +75,11 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px dashed #aaa;
 }
 
+/* don't extend the border to full width on category headers */
+.mw-category-group h3 {
+	display: inline-block;
+}
+
 ol {
 	line-height: 1.5em;
 	margin: .3em 0 0 3.2em;
@@ -148,6 +153,7 @@ q {
 code {
 	background-color: #fffbf4;
 	border: 0;
+	font-size: .8em;
 }
 
 pre {
@@ -158,6 +164,11 @@ pre {
 	line-height: 1.1em;
 	white-space: pre-wrap;
 	word-wrap: break-word;
+}
+
+/* higher specificity for generic external link override */
+#content a.external {
+	color: #8f713f;
 }
 
 
@@ -579,6 +590,18 @@ div#userloginForm .captcha {
 }
 
 
+
+/* Revert mediawiki tables to the old format */
+#content table.wikitable {
+	background: transparent;
+	border-width: 0;
+	border-collapse: separate;
+}
+
+#content table.wikitable th,
+#content table.wikitable td {
+	border-width: 0;
+}
 
 /* Customizations for the gallery, it seems */
 
